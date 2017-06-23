@@ -1,0 +1,9 @@
+language: none
+
+build:
+  pre_ci_boot:
+    image_name: drydock/u16
+    image_tag: master
+    options: "--net=host"
+  ci:
+    - echo "Hello, World!"
